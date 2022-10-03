@@ -1,12 +1,11 @@
 pipeline {
-	agent {label "linux"}
-	options{
-	}
-	stages {
-		stage('Hello') {
-			steps {
-				echo "Hello test Marco"
-			}
-		}
-	}
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello World' 
+            }
+        }
+    }
 }
